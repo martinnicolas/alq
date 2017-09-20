@@ -13,8 +13,9 @@
     </head>
     <body>
         <h1>Listado de personas</h1>
+        Usuario: <c:out value="${usuario}"/>
         <c:forEach items="${personas}" var="persona" > 
-            <p>Nombre: <c:out value="${persona}"/></p>
+            <p>Nombre: <c:out value="${persona.nombre}"/></p>
         </c:forEach>
     </body>
 </html>

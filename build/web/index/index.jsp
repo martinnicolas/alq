@@ -12,10 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Listado de personas</h1>
-        Usuario: <c:out value="${usuario}"/>
-        <c:forEach items="${personas}" var="persona" > 
-            <p>Nombre: <c:out value="${persona.nombre}"/></p>
-        </c:forEach>
+        <h1>Pagina de inicio</h1>
     </body>
 </html>

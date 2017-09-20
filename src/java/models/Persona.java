@@ -5,6 +5,8 @@
  */
 package models;
 
+import java.util.List;
+import org.javalite.activejdbc.Base;
 import org.javalite.activejdbc.Model;
 import org.javalite.activejdbc.annotations.Table;
 
@@ -13,6 +15,4 @@ import org.javalite.activejdbc.annotations.Table;
  * @author martin
  */
 @Table("persona")
-public class Persona extends Model{
-    
-}
+public class Persona extends Model{}

@@ -6,6 +6,13 @@
             <file>file:/home/martin/NetBeansProjects/alq/src/java/controllers/PersonasController.java</file>
             <file>file:/home/martin/NetBeansProjects/alq/web/personas/index.jsp</file>
         </group>
-        <group name="NetBeansProjects"/>
+        <group name="NetBeansProjects">
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/personas/index.jsp</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/WEB-INF/web.xml</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/controllers/PersonasController.java</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/models/Persona.java</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/controllers/IndexController.java</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/index/index.jsp</file>
+        </group>
     </open-files>
 </project-private>

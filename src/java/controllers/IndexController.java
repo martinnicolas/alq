@@ -19,7 +19,7 @@ import javax.ws.rs.core.MediaType;
  *
  * @author martin
  */
-@Path("/index")
+@Path("index")
 public class IndexController {
     
     @Context
@@ -29,6 +29,7 @@ public class IndexController {
     HttpServletResponse response;
     
     @GET
+    @Path("index")
     @Produces(MediaType.TEXT_HTML)
     protected void index() throws IOException, ServletException{
         request.getRequestDispatcher("/index/index.jsp").forward(request, response);

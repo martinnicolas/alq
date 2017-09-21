@@ -7,12 +7,13 @@
             <file>file:/home/martin/NetBeansProjects/alq/web/personas/index.jsp</file>
         </group>
         <group name="NetBeansProjects">
-            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/personas/index.jsp</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/personas/form.jsp</file>
             <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/WEB-INF/web.xml</file>
             <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/controllers/PersonasController.java</file>
-            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/models/Persona.java</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/personas/edit.jsp</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/personas/add.jsp</file>
             <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/controllers/IndexController.java</file>
-            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/web/index/index.jsp</file>
+            <file>file:/home/martin/Desarrollo/NetBeansProjects/alq/src/java/app/ApplicationConfig.java</file>
         </group>
     </open-files>
 </project-private>

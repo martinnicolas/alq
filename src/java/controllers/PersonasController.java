@@ -25,7 +25,7 @@ import org.javalite.activejdbc.Base;
  *
  * @author martin
  */
-@Path("/personas")
+@Path("personas")
 public class PersonasController{
     
     @Context
@@ -35,15 +35,29 @@ public class PersonasController{
     HttpServletResponse response;
 
     @GET
-    @Produces(MediaType.TEXT_HTML)
-    protected Response index() throws IOException, ServletException{
+    @Path("index")
+    @Produces(MediaType.TEXT_HTML)    
+    private Response index() throws IOException, ServletException{
         Base.open("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/alq", "root", "chacho77");
         List<Persona> personas = Persona.findAll();
         Map<String, Object> map = new HashMap<>();
         map.put("personas",personas);        
-        map.put("usuario","Martin");
         Base.close();
         return Response.ok(new Viewable("personas/index.jsp",map)).build();
+    }
+    
+    @GET
+    @Path("new")
+    @Produces(MediaType.TEXT_HTML)
+    private Response newPersona(){
+        return Response.ok(new Viewable("personas/add.jsp")).build();
+    }
+    
+    @GET
+    @Path("/edit")
+    @Produces(MediaType.TEXT_HTML)
+    private Response edit(){
+        return Response.ok(new Viewable("personas/edit.jsp")).build();
     }
 
 }

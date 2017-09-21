@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  *
  * @author martin
  */
-@ApplicationPath("alq")
+@ApplicationPath("")
 public class ApplicationConfig extends Application{
     
 }

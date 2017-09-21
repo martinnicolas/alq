@@ -14,14 +14,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import org.glassfish.jersey.server.mvc.Viewable;
 
 /**
  *
  * @author martin
  */
-@Path("index")
+@Path("/index")
 public class IndexController {
     
     @Context
@@ -31,10 +29,9 @@ public class IndexController {
     HttpServletResponse response;
     
     @GET
-    @Path("index")
     @Produces(MediaType.TEXT_HTML)
-    protected Response index() throws IOException, ServletException{
-        return Response.ok(new Viewable("index/index.jsp")).build();
+    protected void index() throws IOException, ServletException{
+        request.getRequestDispatcher("/index/index.jsp").forward(request, response);
     }
     
 }
